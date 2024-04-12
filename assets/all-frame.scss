@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,700);
+@import "bootstrap/bootstrap";
+@import "dataTables/jquery.dataTables";
+@import "dropzone/css/dropzone";
+@import "iosCheckbox";
+
+body.kopere_dashboard_body {
+    min-height       : 100%;
+    background       : -webkit-linear-gradient(top left, #D7BBEA, #65A8F1);
+    background       : linear-gradient(to bottom right, #D7BBEA, #65A8F1);
+    padding          : 50px;
+    font-size        : .9rem;
+    font-weight      : 500;
+    line-height      : 1.5;
+    color            : #3E4B5B;
+    background-color : #FFFFFF;
+    margin           : 0;
+    font-family      : 'helvetica', 'Arial', sans-serif;
+    @media (max-width : 1650px) {
+        padding : 40px;
+    }
+    @media (max-width : 1550px) {
+        padding : 20px;
+    }
+    @media (max-width : 1000px) {
+        padding : 0;
+    }
+    @media print {
+        background : none !important;
+        padding    : 0 !important;
+    }
+    &.in-iframe {
+        padding : 0;
+    }
+    @import "dashboard/css/dashboard";
+
+    .element-header {
+        .setting {
+            display : none !important;
+        }
+    }
+}
+
+@import "dashboard/css/daterangepicker";
